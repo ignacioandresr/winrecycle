@@ -1,0 +1,26 @@
+.btn-cafe{
+    border-color: black !important;
+    background-color: #8c6c45 !important; 
+    color: white !important;
+}
+.btn-celeste{
+    border-color: black !important;
+    background-color: #c1d6d9 !important; 
+    color: black !important;
+}
+.cafe{
+    background-color: #8c6c45;   
+}
+.celeste{
+    background-color: #c1d6d9;
+}
+.btn-celeste:hover{
+    filter: brightness(90%) !important;
+}
+.btn-cafe:hover{
+    filter: brightness(90%) !important;
+}
+.caja-celeste{
+    background-color: #c1d6d9 !important;
+    border-color: #c1d6d9 !important;
+}
