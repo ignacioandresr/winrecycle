@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/fuente.css">
     <link rel="stylesheet" href="js/">
   </head>
-  <body class="bg-body-secondary">
+  <body class="gris-claro">
     <nav class="navbar navbar-expand-lg border border-black border-top-0 border-start-0 border-end-0">
       <div class="container">
         <a class="navbar-brand" href="inicio.html">
@@ -24,8 +24,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div class="ms-auto alaing-text-center">
-            <a class="btn btn-primary btn-cafe me-2" href="inicio_sesion.html" type="submit">Iniciar Sesión</a>
-            <a class="btn btn-primary btn-celeste" href="" type="submit">Registrarse</a>  
+            <a class="btn btn-primary btn-cafe me-2 shadow" href="inicio_sesion_y_registro.html" type="submit">Registrarse</a> 
+            <a class="btn btn-primary btn-celeste shadow" href="inicio_sesion_y_registro.html" type="submit">Iniciar Sesión</a> 
           </div>
         </div>  
       </div>
@@ -38,66 +38,87 @@
             <p class="fs-3">Seleccione Categorías</p>
           </div>
           <div class="col-auto ms-auto alaing-text-center">
-            <button class="btn btn-primary btn-cafe" type="submit">Enviar</button>
+            <button class="btn btn-primary btn-cafe shadow" type="submit">Enviar</button>
           </div>
         </div>
         <div class="row pb-3">
-          <div class="col-6">
-            <div class="card w-100 h-100">
-              <div class="btn-group end-0 pt-4 pe-4 position-absolute" role="group" aria-label="Basic checkbox toggle button group">
-                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                <label class="btn btn-outline-light caja-celeste material-symbols-outlined" for="btncheck1">
-                  check_circle
-                </label>
+          <div class="col-xs-12 col-lg-6 col-md-12 col-sm-12">
+            <div class="card shadow w-100 h-100">
+              <div class="form-check end-0 pt-4 pe-4 position-absolute shadow">
+                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                <label class="form-check-label" for="checkDefault"></label>
               </div>
-              <img src="imagenes/recicla-vidrio.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
+              <img src="imagenes/recicla-vidrio.jpg" class="card-img-top" alt="..." width="100%" height="350">
+              <div class="card-body verde rounded-bottom">
                 <p class="card-text">Reciclaje de Vidrios</p>
               </div>
             </div>
           </div>
-          <div class="col-6">
-            <div class="card w-100 h-100">
-              <div class="btn-group end-0 pt-4 pe-4 position-absolute" role="group" aria-label="Basic checkbox toggle button group">
-                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                <label class="btn btn-outline-light caja-celeste material-symbols-outlined" for="btncheck1">
-                  check_circle
-                </label>
+          <div class="col-xs-12 col-lg-6 col-md-12 col-sm-12">
+            <div class="card shadow">
+              <div class="form-check end-0 pt-4 pe-4 position-absolute shadow">
+                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                <label class="form-check-label" for="checkDefault"></label>
               </div>
-              <img src="imagenes/recicla-plástico.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
+              <img src="imagenes/recicla-plástico.jpeg" class="card-img-top" alt="..." width="100%" height="350">
+              <div class="card-body naranjo rounded-bottom">
                 <p class="card-text">Reciclaje de Plásticos</p>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-6">
-            <div class="card w-100 h-100">
-              <div class="btn-group end-0 pt-4 pe-4 position-absolute" role="group" aria-label="Basic checkbox toggle button group">
-                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                <label class="btn btn-outline-light caja-celeste material-symbols-outlined" for="btncheck1">
-                  check_circle
-                </label>
+          <div class="col-xs-12 col-lg-6 col-md-12 col-sm-12">
+            <div class="card shadow">
+              <div class="form-check end-0 pt-4 pe-4 position-absolute shadow">
+                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                <label class="form-check-label" for="checkDefault"></label>
               </div>
-              <img src="imagenes/recicla-papel.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
+              <img src="imagenes/recicla-papel.jpg" class="card-img-top" alt="..." width="100%" height="350">
+              <div class="card-body azul rounded-bottom">
                 <p class="card-text">Reciclaje de Papeles</p>
               </div>
             </div>
           </div>
-          <div class="col-6">
-            <div class="card w-100 h-100">
-              <div class="btn-group end-0 pt-4 pe-4 position-absolute" role="group" aria-label="Basic checkbox toggle button group">
-                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                <label class="btn btn-outline-light caja-celeste material-symbols-outlined" for="btncheck1">
-                  check_circle
-                </label>
+          <div class="col-xs-12 col-lg-6 col-md-12 col-sm-12">
+            <div class="card shadow">
+              <div class="form-check end-0 pt-4 pe-4 position-absolute shadow">
+                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                <label class="form-check-label" for="checkDefault"></label>
               </div>
-              <img src="imagenes/recicla-organicos.webp" class="card-img-top" alt="...">
-              <div class="card-body">
+              <img src="imagenes/recicla-organicos.webp" class="card-img-top" alt="..." width="100%" height="350">
+              <div class="card-body gris rounded-bottom">
                 <p class="card-text">Reciclaje de Orgánicos</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid gris border border-black border-end-0 border-start-0">
+      <div class="container py-5">
+        <div class="row py-5">
+          <div class="col-auto" style="width: 100%; height: 500;">
+            <div id="carouselExample" class="carousel slide h-100 shadow" data-bs-ride="carousel" data-bs-interval="5000">
+              <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                  <img src="imagenes/boton_inscripciones.png" class="d-block w-100 h-100 object-fit-cover rounded" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="imagenes/reciclaje.jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="imagenes/reciclar2.jpg" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
         </div>

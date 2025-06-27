@@ -8,6 +8,21 @@
     background-color: #c1d6d9 !important; 
     color: black !important;
 }
+.azul{
+    background-color: #9fc5f8;
+}
+.gris-claro{
+    background-color: #dddddd;
+}
+.verde{
+    background-color: #93c47d;
+}
+.naranjo{
+    background-color: #f6b26b;
+}
+.gris{
+    background-color: #a4a4a6;
+}
 .cafe{
     background-color: #8c6c45;   
 }
