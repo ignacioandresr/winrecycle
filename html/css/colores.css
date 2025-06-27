@@ -29,6 +29,9 @@
 .celeste{
     background-color: #c1d6d9;
 }
+.color-icono{
+    color: rgb(37, 150, 190) !important;
+}
 .btn-celeste:hover{
     filter: brightness(90%) !important;
 }
