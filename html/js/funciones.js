@@ -9,7 +9,6 @@ function togglePassword() {
         btn.textContent = "👁️";
       }
     }
-
 function copiarCorreo() {
     const correo = 'soporte@winrecycle.cl';
     
@@ -20,36 +19,51 @@ function copiarCorreo() {
     });
   }
 
-  function checkEmail() {
-    const emailInput = document.getElementById("exampleFormControlInput1");
-    const alert = document.getElementById("emailAlert");
+document.addEventListener("DOMContentLoaded", function () {
+  const checkboxes = document.querySelectorAll(".reciclaje-checkbox");
+  const btnEnviar = document.getElementById("btnEnviar");
 
-    if (emailInput.value !== "" && !emailInput.value.includes("@")) {
-      alert.classList.remove("d-none");
+  function toggleButton() {
+    const isAnyChecked = Array.from(checkboxes).some(cb => cb.checked);
+
+    if (isAnyChecked) {
+      btnEnviar.classList.remove("disabled");
+      btnEnviar.classList.add("btn-primary");
+      btnEnviar.style.pointerEvents = "auto";
+      btnEnviar.style.opacity = "1";
     } else {
-      alert.classList.add("d-none");
+      btnEnviar.classList.add("disabled");
+      btnEnviar.classList.remove("btn-primary");
+      btnEnviar.style.pointerEvents = "none";
+      btnEnviar.style.opacity = "0.5";
     }
   }
 
-  document.addEventListener("DOMContentLoaded", function() {
-    const checkboxes = document.querySelectorAll(".reciclaje-checkbox");
-    const btnEnviar = document.getElementById("btnEnviar");
+  checkboxes.forEach(cb => cb.addEventListener("change", toggleButton));
+  toggleButton();
+});
 
-    function toggleButton() {
-      const isAnyChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
-      
-      if (isAnyChecked) {
-        btnEnviar.classList.remove("disabled");
-        btnEnviar.removeAttribute("disabled");
-      } else {
-        btnEnviar.classList.add("disabled");
-        btnEnviar.setAttribute("disabled", true);
-      }
-    }
+  fetch('json/tips-reciclaje.json')
+      .then(response => response.json())
+      .then(data => {
+        const contenedor = document.getElementById('contenido-reciclaje');
+        const reciclaje = data.reciclaje;
 
-    checkboxes.forEach(checkbox => {
-      checkbox.addEventListener("change", toggleButton);
-    });
+        for (const tipo in reciclaje) {
+          const titulo = document.createElement('h2');
+          titulo.textContent = tipo.charAt(0).toUpperCase() + tipo.slice(1);
+          contenedor.appendChild(titulo);
 
-    toggleButton();
-  });
+          const lista = document.createElement('ul');
+          reciclaje[tipo].forEach(consejo => {
+            const item = document.createElement('li');
+            item.textContent = consejo;
+            lista.appendChild(item);
+          });
+
+          contenedor.appendChild(lista);
+        }
+      })
+      .catch(error => {
+        console.error('Error al cargar el archivo JSON:', error);
+      });

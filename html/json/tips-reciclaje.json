@@ -1,0 +1,28 @@
+{
+  "reciclaje": {
+    "vidrios": [
+      "Enjuaga los envases antes de reciclarlos para evitar malos olores y contaminación.",
+      "No coloques vidrios rotos en el contenedor de reciclaje común, consulta puntos especiales.",
+      "Retira tapas y corchos de los frascos de vidrio antes de reciclar.",
+      "Evita reciclar vidrios mezclados con cerámica o espejos, ya que no son reciclables."
+    ],
+    "plasticos": [
+      "Limpia y seca los envases plásticos antes de reciclarlos.",
+      "Evita aplastar envases de plástico para facilitar su manejo en plantas de reciclaje.",
+      "Separa los plásticos por tipo si es posible (PET, HDPE, etc.) para mejorar el reciclaje.",
+      "No recicles plásticos contaminados con restos de comida o sustancias químicas."
+    ],
+    "papeles": [
+      "Separa papel limpio y seco del papel sucio o encerado.",
+      "No recicles papeles con pegamento o cintas adhesivas.",
+      "Retira grapas y clips antes de reciclar papel y cartón.",
+      "Evita reciclar papel plastificado o con capas metálicas."
+    ],
+    "organicos": [
+      "Separa restos de comida, cáscaras y residuos vegetales para compostaje.",
+      "Evita incluir plásticos o vidrios en el contenedor de residuos orgánicos.",
+      "Si no tienes compostera, utiliza bolsas biodegradables para residuos orgánicos.",
+      "Aprovecha los residuos orgánicos para hacer abono casero y mejorar tu jardín."
+    ]
+  }
+}
