@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const reciclaje = data.reciclaje;
 
         for (const tipo in reciclaje) {
-          const titulo = document.createElement('h2');
+          const titulo = document.createElement('h4');
           titulo.textContent = tipo.charAt(0).toUpperCase() + tipo.slice(1);
           contenedor.appendChild(titulo);
 
